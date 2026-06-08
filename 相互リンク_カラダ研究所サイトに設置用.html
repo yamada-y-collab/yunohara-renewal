@@ -1,0 +1,48 @@
+<!--
+============================================================
+ 相互集客用スニペット
+ 設置先：癒の原カラダ研究所サイト（https://yunohara-karada-labo.com/）
+ 目的　：カラダ研究所 → 癒の原整骨院 への送客導線
+
+ 使い方：
+  1) 下記<style>を<head>内、または共通CSSに追加
+  2) <section class="sister-clinic">…</section> を
+     トップページの任意の位置（フッター手前など）に貼り付け
+  3) リンク先URL（https://yunohara-seikotsuin.com/）は公開後の本番URLに合わせて確認
+ ※カラダ研究所サイトのデザインに合わせて色・余白は微調整してください
+============================================================
+-->
+
+<style>
+.sister-clinic{background:#eef2ef;padding:64px 20px}
+.sister-clinic .inner{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr;
+  background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 12px 34px rgba(1,113,75,.13)}
+.sister-clinic .media{min-height:300px;background:linear-gradient(135deg,#0c3d2a,#01714b);
+  display:grid;place-items:center;color:#fff;text-align:center;padding:30px;font-weight:700}
+.sister-clinic .body{padding:38px 40px}
+.sister-clinic .label{display:inline-block;background:#ff8400;color:#fff;font-weight:900;font-size:.74rem;
+  padding:5px 14px;border-radius:999px;margin-bottom:14px}
+.sister-clinic h2{font-weight:900;font-size:1.6rem;margin:0 0 6px;color:#0f0f0f}
+.sister-clinic .catch{color:#015c3d;font-weight:900;margin:0 0 14px}
+.sister-clinic p{font-size:.92rem;color:#555c58;margin:0 0 18px;line-height:1.9}
+.sister-clinic ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0}
+.sister-clinic li{background:#e6f1ec;color:#015c3d;border-radius:6px;padding:6px 12px;font-size:.8rem;font-weight:700}
+.sister-clinic .btn{display:inline-block;background:#01714b;color:#fff;font-weight:700;border-radius:6px;
+  padding:16px 34px;text-decoration:none}
+.sister-clinic .btn:hover{background:#015c3d}
+@media(max-width:760px){.sister-clinic .inner{grid-template-columns:1fr}.sister-clinic .media{min-height:200px}.sister-clinic .body{padding:28px 24px}}
+</style>
+
+<section class="sister-clinic">
+  <div class="inner">
+    <div class="media">癒の原整骨院<br>院内写真</div>
+    <div class="body">
+      <span class="label">痛み・ケガの治療なら</span>
+      <h2>癒の原整骨院</h2>
+      <p class="catch">動けるカラダは、人生を変える。</p>
+      <p>腰痛・肩こり・スポーツ外傷から交通事故・むち打ち治療まで。地域初の酸素カプセルと最新治療器を備え、回復に特化したオーダーメイド施術を行う整骨院です。各種保険・自賠責保険に対応。</p>
+      <ul><li>交通事故・むち打ち</li><li>酸素カプセル</li><li>腰痛・肩こり</li><li>スポーツ外傷</li><li>各種保険対応</li></ul>
+      <a class="btn" href="https://yunohara-seikotsuin.com/" target="_blank" rel="noopener">癒の原整骨院を見る ↗</a>
+    </div>
+  </div>
+</section>
