@@ -31,6 +31,14 @@ document.querySelectorAll('.feature, .menu-card, .flow-step, .worry-list li, .re
     io.observe(el);
   });
 
+// ===== ヘッダーナビ：現在ページをハイライト =====
+(function () {
+  const cur = (location.pathname.split('/').pop() || 'index.html');
+  document.querySelectorAll('.header-nav a').forEach(a => {
+    if (a.getAttribute('href') === cur) a.setAttribute('aria-current', 'page');
+  });
+})();
+
 // ===== ブログサムネイル（関連イラストを自動はめ込み） =====
 (function () {
   const byHref = {

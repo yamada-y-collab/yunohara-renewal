@@ -78,11 +78,21 @@ a{color:inherit;text-decoration:none}
 .logo-mark{width:50px;height:50px;border-radius:50%;border:2.5px solid var(--green);
   display:grid;place-items:center;color:var(--green);font-family:"Lato";font-weight:900;font-size:1.5rem;flex-shrink:0}
 .logo-text strong{display:block;font-weight:900;font-size:1.45rem;letter-spacing:.04em;line-height:1.1}
-.logo-text small{font-size:.66rem;color:var(--ink-soft);letter-spacing:.18em}
+.logo-text small{display:block;font-size:.66rem;color:var(--ink-soft);letter-spacing:.1em;white-space:nowrap;margin-top:3px}
+/* ヘッダー グローバルナビ（PCのみ） */
+.header-nav{display:none}
+.header-nav a{position:relative;font-weight:700;font-size:.84rem;color:var(--ink);white-space:nowrap;padding:8px 2px;letter-spacing:.01em;transition:color .2s}
+.header-nav a:hover,.header-nav a[aria-current="page"]{color:var(--green)}
+.header-nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--green);transform:scaleX(0);transform-origin:center;transition:transform .25s}
+.header-nav a:hover::after,.header-nav a[aria-current="page"]::after{transform:scaleX(1)}
+@media(min-width:1240px){
+  .header-nav{display:flex;flex:1;justify-content:center;align-items:center;gap:clamp(8px,1.5vw,26px)}
+  .logo{margin:0}
+}
 .header-info{align-self:stretch;background:var(--green);color:#fff;display:flex;flex-direction:column;
   justify-content:center;padding:0 26px;text-align:left}
 .header-info .recept{font-size:.72rem;line-height:1.55;opacity:.95}
-.header-info .tel{font-family:"Lato";font-weight:900;font-size:1.55rem;display:flex;align-items:center;gap:8px;letter-spacing:.02em}
+.header-info .tel{font-family:"Lato";font-weight:900;font-size:1.55rem;display:flex;align-items:center;gap:8px;letter-spacing:.02em;white-space:nowrap}
 .header-info .tel::before{content:"📞";font-size:1rem}
 .hamburger{align-self:stretch;width:var(--header-h);background:var(--green-d);border:0;color:#fff;
   cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;flex-shrink:0}
@@ -95,6 +105,8 @@ a{color:inherit;text-decoration:none}
 .hamburger.open .bars span:nth-child(1){top:8px;transform:rotate(45deg)}
 .hamburger.open .bars span:nth-child(2){opacity:0}
 .hamburger.open .bars span:nth-child(3){top:8px;transform:rotate(-45deg)}
+/* PCはグローバルナビを使うためハンバーガー非表示 */
+@media(min-width:1240px){.hamburger{display:none}}
 
 /* スライドメニュー */
 .drawer{position:fixed;inset:0;z-index:190;background:rgba(1,92,61,.97);
@@ -293,7 +305,7 @@ a{color:inherit;text-decoration:none}
   .header-sns{display:none}
   .logo-mark{width:40px;height:40px;font-size:1.2rem}
   .logo-text strong{font-size:1.1rem}
-  .logo-text small{font-size:.56rem}
+  .logo-text small{display:none}
   .header-info{display:none}
   .hamburger{width:64px}
   .split,.split.rev,.access-grid{grid-template-columns:1fr;gap:30px}
