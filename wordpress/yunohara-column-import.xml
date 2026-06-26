@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+  <title>癒の原整骨院 コラム</title>
+  <link>https://example.com</link>
+  <description>コラム記事インポート</description>
+  <pubDate>Fri, 26 Jun 2026 09:00:00 +0900</pubDate>
+  <language>ja</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:base_site_url>https://example.com</wp:base_site_url>
+  <wp:base_blog_url>https://example.com</wp:base_blog_url>
+  <wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@example.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+  <wp:term><wp:term_id>10</wp:term_id><wp:term_taxonomy>column_cat</wp:term_taxonomy><wp:term_slug>jiko</wp:term_slug><wp:term_name><![CDATA[交通事故]]></wp:term_name></wp:term>
+  <item>
+    <title>交通事故にあったら最初にすべきこと</title>
+    <link>https://example.com/column/jiko-taiou/</link>
+    <pubDate>Fri, 26 Jun 2026 09:00:00 +0900</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://example.com/?post_type=column&#038;p=101</guid>
+    <description></description>
+    <content:encoded><![CDATA[<div class="article-meta"><span class="tag">交通事故</span><span>交通事故の基礎知識</span></div>
+    <h1 style="font-weight:900;font-size:clamp(1.5rem,4.5vw,2.2rem);line-height:1.5;margin-bottom:28px">交通事故にあったら最初にすべきこと【北九州・若松の整骨院が解説】</h1>
+    <div class="split-media" style="aspect-ratio:16/8;margin-bottom:32px"><img src="/wp-content/themes/yunohara-seikotsuin/assets/img/accident.jpg" alt="交通事故治療のイメージ"></div>
+
+    <p>北九州市若松区の<a href="/">癒の原整骨院</a>です。交通事故は突然起こり、誰でも気が動転してしまうもの。しかし、事故直後の対応によって、その後の治療や保険の手続きが大きく変わります。この記事では、<strong>交通事故にあったら最初にすべきこと</strong>を順番に解説します。</p>
+
+    <div class="toc">
+      <div class="toc-ttl">目次</div>
+      <ol>
+        <li><a href="#s1">① 安全を確保し、警察へ連絡する</a></li>
+        <li><a href="#s2">② 相手の情報・保険会社を確認する</a></li>
+        <li><a href="#s3">③ 医療機関で診断を受ける</a></li>
+        <li><a href="#s4">④ 保険会社へ連絡する</a></li>
+        <li><a href="#s5">⑤ 整骨院で通院・施術を始める</a></li>
+        <li><a href="#s6">まとめ</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1">① 安全を確保し、警察へ連絡する</h2>
+    <p>まずは安全な場所へ移動し、ケガ人がいれば救護を優先します。そして、どんなに小さな事故でも<strong>必ず警察へ連絡</strong>しましょう。警察に届け出をしないと「交通事故証明書」が発行されず、保険の手続きが進められないことがあります。</p>
+
+    <h2 id="s2">② 相手の情報・保険会社を確認する</h2>
+    <p>相手の<strong>氏名・連絡先・車のナンバー・加入している保険会社</strong>を確認しておきます。可能であれば、事故現場の状況をスマートフォンで写真に残しておくと、後の手続きがスムーズです。</p>
+    <ul>
+      <li>相手の氏名・住所・連絡先</li>
+      <li>車のナンバー・車種</li>
+      <li>加入保険会社・連絡先</li>
+      <li>事故現場・車両の損傷の写真</li>
+    </ul>
+
+    <h2 id="s3">③ 医療機関で診断を受ける</h2>
+    <p>その場で痛みがなくても、<span class="marker">できるだけ早く病院（整形外科）で診察を受け、診断書を取得</span>しておきましょう。むち打ちなどは後から症状が出ることが多く、診断書がないと事故とケガの関係を証明しにくくなります。</p>
+    <div class="callout warn">
+      <p class="ttl">⚠ 「あとで痛くなった」に注意</p>
+      <p>事故から数日後に首や腰の痛み・しびれが出るのはよくあること。受診が遅れると、保険が使えなくなる場合があります。</p>
+    </div>
+
+    <h2 id="s4">④ 保険会社へ連絡する</h2>
+    <p>加入している保険会社、または相手側の保険会社へ連絡します。<strong>「整骨院で施術を受けたい」</strong>という希望も、このときに伝えておくとスムーズです。手続きで分からないことがあれば、当院でもサポートします。</p>
+
+    <h2 id="s5">⑤ 整骨院で通院・施術を始める</h2>
+    <p>診断を受けたら、回復に向けた通院を始めましょう。当院では<a href="/accident/">交通事故・むち打ち治療</a>に対応しており、<strong>自賠責保険適用なら窓口負担0円</strong>。手技療法や物理療法で、つらい症状の改善をサポートします。整形外科と併院しながら通うことも可能です。</p>
+    <blockquote>慰謝料や治療費の取り扱いなど、保険制度の詳細は保険会社・状況により異なります。具体的な内容は保険会社や専門家にもご確認ください。</blockquote>
+
+    <h2 id="s6">まとめ</h2>
+    <p>交通事故にあったら、①警察へ連絡 → ②相手情報の確認 → ③医療機関で診断 → ④保険会社へ連絡 → ⑤通院開始、の順で対応しましょう。早めの行動が、後遺症を防ぎスムーズな回復につながります。北九州市若松区で交通事故のケガにお悩みの方は、お気軽に癒の原整骨院へご相談ください。</p>
+
+    <div class="author">
+      <div class="av">院長</div>
+      <div>
+        <div class="name">監修：原口 匡平（院長 / 柔道整復師）</div>
+        <div class="role">癒の原整骨院 院長・北九州市若松区</div>
+        <p>若松で育ち、令和元年に開業。交通事故治療からスポーツ外傷まで、地域の皆さまの「回復」に向き合っています。</p>
+      </div>
+    </div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>101</wp:post_id>
+    <wp:post_date><![CDATA[2026-06-26 09:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-06-26 00:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[jiko-taiou]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[column]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="column_cat" nicename="jiko"><![CDATA[交通事故]]></category>
+  </item>
+  <item>
+    <title>むち打ちの症状と治療｜放置するとどうなる？</title>
+    <link>https://example.com/column/muchiuchi/</link>
+    <pubDate>Fri, 26 Jun 2026 09:00:00 +0900</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://example.com/?post_type=column&#038;p=102</guid>
+    <description></description>
+    <content:encoded><![CDATA[<div class="article-meta"><span class="tag">交通事故</span><span>症状解説</span></div>
+    <h1 style="font-weight:900;font-size:clamp(1.5rem,4.5vw,2.2rem);line-height:1.5;margin-bottom:28px">むち打ちの症状と治療｜放置するとどうなる？</h1>
+    <div class="split-media" style="aspect-ratio:16/8;margin-bottom:32px"><img src="/wp-content/themes/yunohara-seikotsuin/assets/img/accident.jpg" alt="交通事故治療のイメージ"></div>
+
+    <p>交通事故のケガで最も多いのが「<strong>むち打ち</strong>」です。北九州市若松区の<a href="/">癒の原整骨院</a>が、むち打ちの症状や種類、放置するとどうなるのか、そして整骨院での治療についてわかりやすく解説します。</p>
+
+    <div class="toc">
+      <div class="toc-ttl">目次</div>
+      <ol>
+        <li><a href="#s1">むち打ちとは？</a></li>
+        <li><a href="#s2">主な症状</a></li>
+        <li><a href="#s3">むち打ちの種類</a></li>
+        <li><a href="#s4">放置するとどうなる？</a></li>
+        <li><a href="#s5">整骨院でのむち打ち治療</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1">むち打ちとは？</h2>
+    <p>むち打ちは、追突などの強い衝撃で首が前後に大きくしなり、頸部の<strong>筋肉・靭帯・神経</strong>などを痛める状態の総称です。正式には「頸椎捻挫」「外傷性頸部症候群」などと呼ばれます。骨に異常がなくても、首まわりの組織が損傷していることが多くあります。</p>
+
+    <h2 id="s2">主な症状</h2>
+    <ul>
+      <li>首・肩・背中の<strong>痛み・こわばり</strong></li>
+      <li>頭痛・めまい・吐き気</li>
+      <li>手や腕の<strong>しびれ・だるさ</strong></li>
+      <li>耳鳴り・目の疲れ</li>
+      <li>集中力の低下・寝つきの悪さ</li>
+    </ul>
+    <p>これらは事故直後ではなく、<span class="marker">数日〜数週間してから現れる</span>ことも珍しくありません。</p>
+
+    <h2 id="s3">むち打ちの種類</h2>
+    <p>むち打ちは症状によっていくつかのタイプに分けられます。</p>
+    <h3>頸椎捻挫型</h3>
+    <p>最も多いタイプ。首の筋肉や靭帯の損傷により、首や肩のこり・痛みが出ます。</p>
+    <h3>神経根症状型</h3>
+    <p>神経が圧迫され、腕や手のしびれ・力の入りにくさが出るタイプです。</p>
+    <h3>バレ・リュー型</h3>
+    <p>頭痛・めまい・耳鳴りなど、自律神経の乱れによる不調が出るタイプです。</p>
+
+    <h2 id="s4">放置するとどうなる？</h2>
+    <div class="callout warn">
+      <p class="ttl">⚠ 後遺症のリスク</p>
+      <p>適切なケアをせず放置すると、痛みやしびれが慢性化し、天候や季節で繰り返す「後遺症」として残ることがあります。早期の治療が回復への近道です。</p>
+    </div>
+    <p>「そのうち治るだろう」と通院をやめてしまうと、症状がぶり返すことも。痛みが軽くなっても、専門家の判断を受けながら通うことが大切です。</p>
+
+    <h2 id="s5">整骨院でのむち打ち治療</h2>
+    <p>当院では、手技療法で首まわりの緊張をやわらげ、超音波や特殊電気治療で深部の炎症・神経症状にアプローチします。回復を早めるために<a href="/oxygen/">酸素カプセル</a>を併用することも可能です。<strong>自賠責保険適用なら窓口負担0円</strong>で通院できます。</p>
+    <p>くわしくは<a href="/accident/">交通事故・むち打ち治療のページ</a>をご覧ください。北九州市若松区で首の痛み・しびれにお悩みの方は、お早めにご相談ください。</p>
+
+    <div class="author">
+      <div class="av">院長</div>
+      <div>
+        <div class="name">監修：原口 匡平（院長 / 柔道整復師）</div>
+        <div class="role">癒の原整骨院 院長・北九州市若松区</div>
+        <p>若松で育ち、令和元年に開業。交通事故治療からスポーツ外傷まで、地域の皆さまの「回復」に向き合っています。</p>
+      </div>
+    </div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>102</wp:post_id>
+    <wp:post_date><![CDATA[2026-06-26 09:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-06-26 00:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[muchiuchi]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[column]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="column_cat" nicename="jiko"><![CDATA[交通事故]]></category>
+  </item>
+  <item>
+    <title>整骨院で交通事故治療｜自賠責で窓口0円の仕組み</title>
+    <link>https://example.com/column/jibaiseki/</link>
+    <pubDate>Fri, 26 Jun 2026 09:00:00 +0900</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://example.com/?post_type=column&#038;p=103</guid>
+    <description></description>
+    <content:encoded><![CDATA[<div class="article-meta"><span class="tag">交通事故</span><span>保険のこと</span></div>
+    <h1 style="font-weight:900;font-size:clamp(1.5rem,4.5vw,2.2rem);line-height:1.5;margin-bottom:28px">整骨院で交通事故治療｜自賠責保険で窓口0円の仕組み</h1>
+    <div class="split-media" style="aspect-ratio:16/8;margin-bottom:32px"><img src="/wp-content/themes/yunohara-seikotsuin/assets/img/accident.jpg" alt="交通事故治療のイメージ"></div>
+
+    <p>「整骨院での交通事故治療は本当に0円で通えるの？」という疑問をよくいただきます。北九州市若松区の<a href="/">癒の原整骨院</a>が、自賠責保険の仕組みと、整形外科との併院・転院のポイントを解説します。</p>
+
+    <div class="toc">
+      <div class="toc-ttl">目次</div>
+      <ol>
+        <li><a href="#s1">自賠責保険とは？</a></li>
+        <li><a href="#s2">なぜ窓口負担0円なのか</a></li>
+        <li><a href="#s3">整骨院でも治療を受けられる</a></li>
+        <li><a href="#s4">整形外科との併院・転院</a></li>
+        <li><a href="#s45">弁護士特約で弁護士費用0円・慰謝料アップも</a></li>
+        <li><a href="#s5">通院時の注意点</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1">自賠責保険とは？</h2>
+    <p>自賠責保険（自動車損害賠償責任保険）は、すべての自動車・バイクに加入が義務づけられている保険です。交通事故の被害者を救済するためのもので、ケガの<strong>治療費や通院にかかる費用</strong>などが補償の対象になります。</p>
+
+    <h2 id="s2">なぜ窓口負担0円なのか</h2>
+    <p>交通事故によるケガの治療費は、原則として<span class="marker">加害者側の自賠責保険から支払われる</span>ため、被害者の方が窓口で支払う必要がない（0円）ケースが一般的です。当院では保険会社とのやり取りもサポートするので、手続きが不安な方もご安心ください。</p>
+    <div class="callout">
+      <p class="ttl">ポイント</p>
+      <p>自賠責保険が適用される場合、治療費・通院費の窓口負担は0円。お金の心配をせず、回復に専念できます。</p>
+    </div>
+
+    <h2 id="s3">整骨院でも治療を受けられる</h2>
+    <p>交通事故のケガは、病院（整形外科）だけでなく<strong>整骨院でも施術を受けることができます</strong>。整骨院は国家資格である柔道整復師が在籍し、手技療法や物理療法で筋肉・関節のケアを行うのが得意分野です。「待ち時間が長い」「夜間に通いたい」といった方にも利用されています。</p>
+
+    <h2 id="s4">整形外科との併院・転院</h2>
+    <p>交通事故では、まず医師の診断・診断書の取得が大切です。そのうえで、整形外科に通いながら整骨院でリハビリ的なケアを受ける<strong>「併院」</strong>や、今通っている院から当院へ<strong>「転院」</strong>することも可能です。</p>
+    <blockquote>※自賠責保険の適用範囲・慰謝料などの制度は、保険会社や事故の状況によって異なります。具体的な手続きや金額については、保険会社や専門家にもご確認ください。当院では施術と通院に関するサポートを行います。</blockquote>
+
+    <h2 id="s45">弁護士特約で弁護士費用0円・慰謝料アップも</h2>
+    <p>意外と知られていませんが、ご自身やご家族が加入している自動車保険に「<strong>弁護士特約（弁護士費用特約）</strong>」が付いていることがあります。これを使うと、示談交渉などを弁護士に依頼した際の<span class="marker">弁護士費用が0円（保険会社負担）になるケース</span>があります。</p>
+    <p>さらに、弁護士が交渉に入ることで、慰謝料の算定基準が見直され、<strong>受け取れる慰謝料が増額される可能性</strong>もあります。「ケガが軽いから関係ない」と思っていても、まずは保険証券で特約の有無を確認してみることをおすすめします。</p>
+    <div class="callout">
+      <p class="ttl">ポイント</p>
+      <p>弁護士特約は、ご自身に過失がない事故でも使えることが多く、保険の等級（翌年の保険料）にも影響しないのが一般的です。</p>
+    </div>
+    <blockquote>※適用条件・増額の可否や金額は、保険の内容や事故の状況によって異なります。具体的な内容は保険会社や弁護士にご確認ください。当院は治療面でのサポートを行います。</blockquote>
+
+    <h2 id="s5">通院時の注意点</h2>
+    <ul>
+      <li>事故後は<strong>早めに受診</strong>し、診断書を取得しておく</li>
+      <li>痛みが軽くなっても<strong>自己判断で通院をやめない</strong></li>
+      <li>整骨院に通う旨を<strong>保険会社に伝えておく</strong></li>
+    </ul>
+    <p>当院の対応について詳しくは<a href="/accident/">交通事故・むち打ち治療のページ</a>をご覧ください。北九州市若松区で交通事故のケガにお悩みの方は、お気軽にご相談ください。</p>
+
+    <div class="author">
+      <div class="av">院長</div>
+      <div>
+        <div class="name">監修：原口 匡平（院長 / 柔道整復師）</div>
+        <div class="role">癒の原整骨院 院長・北九州市若松区</div>
+        <p>若松で育ち、令和元年に開業。交通事故治療からスポーツ外傷まで、地域の皆さまの「回復」に向き合っています。</p>
+      </div>
+    </div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>103</wp:post_id>
+    <wp:post_date><![CDATA[2026-06-26 09:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-06-26 00:00:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[jibaiseki]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[column]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="column_cat" nicename="jiko"><![CDATA[交通事故]]></category>
+  </item>
+</channel>
+</rss>

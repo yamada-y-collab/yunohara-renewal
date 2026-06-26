@@ -1,0 +1,17 @@
+/*
+Theme Name: 癒の原整骨院
+Theme URI: https://yunohara-seikotsuin.com/
+Author: 株式会社メディレクション
+Author URI: https://medirection.jp/
+Description: 癒の原整骨院 オリジナルテーマ。静的プロトタイプ（姉妹院サイトに統一したデザイン）からの移植版。酸素カプセル・交通事故治療を訴求するLP型ページ＋コラム（カスタム投稿）。
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: yunohara
+*/
+
+/* 実体のデザインCSSは assets/css/style.css を functions.php で enqueue しています。
+   このファイルは WordPress テーマ識別用のヘッダーです。 */

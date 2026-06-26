@@ -1,0 +1,14 @@
+<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="腰痛・肩こり">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#dbeee4"/><stop offset="1" stop-color="#b6d8c7"/></linearGradient></defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <circle cx="160" cy="86" r="62" fill="#ffffff" opacity=".5"/>
+  <!-- body -->
+  <circle cx="160" cy="56" r="17" fill="#01714b"/>
+  <path d="M136 84 q24-13 48 0 l-5 46 q-19 9 -38 0 z" fill="#015c3d"/>
+  <!-- shoulder stiffness marks -->
+  <g stroke="#e0594a" stroke-width="4" fill="none" stroke-linecap="round" opacity=".9">
+    <path d="M140 82 q-8 0 -10 8"/><path d="M180 82 q8 0 10 8"/>
+  </g>
+  <!-- lower back pain band -->
+  <rect x="140" y="106" width="40" height="13" rx="6.5" fill="#e0594a" opacity=".85"/>
+</svg>
