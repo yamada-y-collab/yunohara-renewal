@@ -325,6 +325,12 @@ a{color:inherit;text-decoration:none}
   .hero-cta .btn{width:100%}
   .cta-band-btns{flex-direction:column;align-items:stretch}
   .reco-list li{flex-wrap:wrap;font-size:.94rem}
+  /* 料金テーブルはSPで縦積み（項目名バー＋金額） */
+  .price-table tr{display:block;border-bottom:1px solid #e7ece9}
+  .price-table tr:last-child{border-bottom:0}
+  .price-table th,.price-table td{display:block;width:auto;white-space:normal;border-bottom:0}
+  .price-table th{padding:13px 18px}
+  .price-table td{padding:14px 18px}
 }
 
 /* =========================================================
