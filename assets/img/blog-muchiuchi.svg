@@ -1,0 +1,19 @@
+<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="むち打ち">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#dbeee4"/><stop offset="1" stop-color="#b6d8c7"/></linearGradient></defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <circle cx="160" cy="90" r="64" fill="#ffffff" opacity=".5"/>
+  <!-- shoulders -->
+  <path d="M110 142 q50-26 100 0 v6 h-100 z" fill="#015c3d"/>
+  <!-- neck -->
+  <rect x="142" y="92" width="24" height="42" rx="11" fill="#015c3d"/>
+  <!-- head profile -->
+  <circle cx="150" cy="68" r="27" fill="#01714b"/>
+  <circle cx="138" cy="66" r="3.6" fill="#e6f1ec"/>
+  <path d="M124 70 q-5 2 -2 8" stroke="#e6f1ec" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- pain flashes on neck -->
+  <g stroke="#e0594a" stroke-width="4.4" fill="none" stroke-linecap="round">
+    <path d="M170 84 q13-3 14-15"/>
+    <path d="M176 95 q19-2 20-18"/>
+  </g>
+  <path d="M170 96 l8-6 -3 9 8-5" stroke="#e0594a" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

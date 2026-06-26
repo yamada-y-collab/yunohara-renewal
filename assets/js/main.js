@@ -30,3 +30,30 @@ document.querySelectorAll('.feature, .menu-card, .flow-step, .worry-list li, .re
     el.style.transition = `opacity .6s ${(i % 4) * 0.08}s, transform .6s ${(i % 4) * 0.08}s`;
     io.observe(el);
   });
+
+// ===== ブログサムネイル（関連イラストを自動はめ込み） =====
+(function () {
+  const byHref = {
+    'blog-jiko-taiou.html': 'taiou',
+    'blog-muchiuchi.html': 'muchiuchi',
+    'blog-jibaiseki.html': 'jibaiseki',
+    'accident.html': 'service'
+  };
+  const byTag = [[/酸素/, 'oxygen'], [/腰痛|肩こり/, 'koshi'], [/スポーツ/, 'sports']];
+  document.querySelectorAll('.blog-card').forEach(card => {
+    const ph = card.querySelector('.ph');
+    if (!ph) return;
+    const href = card.getAttribute('href') || '';
+    let key = null;
+    for (const k in byHref) { if (href.endsWith(k)) { key = byHref[k]; break; } }
+    if (!key) {
+      const tag = ph.querySelector('.tag');
+      const tx = tag ? tag.textContent : '';
+      for (const [re, k] of byTag) { if (re.test(tx)) { key = k; break; } }
+    }
+    if (!key) return;
+    // ダミーのテキスト（「記事」等）を消し、関連イラストを背景に
+    ph.childNodes.forEach(n => { if (n.nodeType === 3) n.textContent = ''; });
+    ph.style.background = `center/cover no-repeat url('assets/img/blog-${key}.svg')`;
+  });
+})();

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="交通事故">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#dbeee4"/><stop offset="1" stop-color="#b6d8c7"/></linearGradient></defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <circle cx="160" cy="94" r="66" fill="#ffffff" opacity=".5"/>
+  <!-- car -->
+  <path d="M104 106 l9-27 a11 11 0 0 1 10-7 h74 a11 11 0 0 1 10 7 l9 27 z" fill="#01714b"/>
+  <rect x="102" y="103" width="116" height="20" rx="8" fill="#015c3d"/>
+  <path d="M126 82 l5-13 a6 6 0 0 1 5-4 h13 v17 z" fill="#e6f1ec"/>
+  <path d="M152 82 v-17 h13 a6 6 0 0 1 5 4 l5 13 z" fill="#e6f1ec"/>
+  <circle cx="123" cy="123" r="12" fill="#0f0f0f"/><circle cx="123" cy="123" r="4.5" fill="#fff"/>
+  <circle cx="197" cy="123" r="12" fill="#0f0f0f"/><circle cx="197" cy="123" r="4.5" fill="#fff"/>
+  <circle cx="214" cy="99" r="3.4" fill="#ffe08a"/>
+  <!-- warning triangle -->
+  <g transform="translate(192,46)">
+    <path d="M17 0 L34 30 H0 Z" fill="#ff8400" stroke="#fff" stroke-width="3.4" stroke-linejoin="round"/>
+    <rect x="15" y="11" width="4" height="10" rx="2" fill="#fff"/><circle cx="17" cy="25" r="2.5" fill="#fff"/>
+  </g>
+</svg>

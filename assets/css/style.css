@@ -218,6 +218,8 @@ a{color:inherit;text-decoration:none}
 .hours-table thead th{background:var(--green);color:#fff}
 .hours-table tbody th{background:var(--green-l);font-weight:900;white-space:nowrap}
 .hours-table .closed{color:var(--red);font-weight:900;background:#fdeeec}
+.access-photo{aspect-ratio:3/2;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);margin-bottom:24px}
+.access-photo img{width:100%;height:100%;object-fit:cover;display:block}
 .access-map{aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:340px}
 .access-map iframe{width:100%;height:100%;border:0}
 

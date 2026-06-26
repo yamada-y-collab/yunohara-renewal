@@ -1,0 +1,15 @@
+<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="スポーツ外傷">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#dbeee4"/><stop offset="1" stop-color="#b6d8c7"/></linearGradient></defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <circle cx="160" cy="90" r="62" fill="#ffffff" opacity=".5"/>
+  <!-- bent leg -->
+  <path d="M150 48 l9 42 -17 36" stroke="#015c3d" stroke-width="17" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- knee highlight -->
+  <circle cx="159" cy="92" r="13" fill="#e0594a" opacity=".55"/>
+  <!-- shoe -->
+  <path d="M132 124 h26 a7 7 0 0 1 7 7 v3 h-37 z" fill="#01714b"/>
+  <!-- ball -->
+  <circle cx="200" cy="118" r="17" fill="#fff" stroke="#015c3d" stroke-width="3.4"/>
+  <path d="M200 105 l7 9 -3 11 -8 0 -3 -11 z" fill="#015c3d"/>
+  <g stroke="#ff8400" stroke-width="4" stroke-linecap="round"><line x1="96" y1="70" x2="116" y2="70"/><line x1="92" y1="86" x2="110" y2="86"/></g>
+</svg>
