@@ -197,6 +197,32 @@ function ynh_seo_head() {
 }
 add_action('wp_head', 'ynh_seo_head', 1);
 
+/* =========================================================
+   旧URL（静的サイトの *.html）→ 新URL 301リダイレクト
+   .com は .jp へパスをそのまま転送するため、.jp 側で .html を新URLに対応付ける。
+   ========================================================= */
+function ynh_legacy_redirects() {
+    $map = array(
+        'index.html'            => '/',
+        'oxygen.html'           => '/oxygen/',
+        'es5000.html'           => '/es5000/',
+        'accident.html'         => '/accident/',
+        'symptoms.html'         => '/symptoms/',
+        'menu.html'             => '/menu/',
+        'blog.html'             => '/column/',
+        'blog-jiko-taiou.html'  => '/column/jiko-taiou/',
+        'blog-muchiuchi.html'   => '/column/muchiuchi/',
+        'blog-jibaiseki.html'   => '/column/jibaiseki/',
+    );
+    $path = isset($_SERVER['REQUEST_URI']) ? parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) : '';
+    $path = ltrim((string) $path, '/');
+    if (isset($map[$path])) {
+        wp_redirect(home_url($map[$path]), 301);
+        exit;
+    }
+}
+add_action('template_redirect', 'ynh_legacy_redirects');
+
 /* ---- アーカイブの表示件数 ---- */
 function ynh_column_per_page($query) {
     if (!is_admin() && $query->is_main_query() && is_post_type_archive('column')) {
