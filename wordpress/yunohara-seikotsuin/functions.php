@@ -108,6 +108,88 @@ function ynh_jsonld() {
 }
 add_action('wp_head', 'ynh_jsonld');
 
+/* =========================================================
+   SEO：ページ別のタイトル・メタディスクリプション・OGP・canonical
+   ※ SEO SIMPLE PACK 等のSEOプラグインを併用する場合は二重出力になるため、
+     どちらか一方に統一してください（このテーマ側SEOを止めるには
+     ynh_seo_title フィルタと ynh_seo_head アクションの add をコメントアウト）。
+   ========================================================= */
+function ynh_seo_data() {
+    $t = null; $d = null; $canon = null;
+    if (is_front_page()) {
+        $t = '癒の原整骨院｜北九州市若松区の整骨院｜酸素カプセル・交通事故治療';
+        $d = '北九州市若松区の癒の原整骨院。地域初の酸素カプセル導入。腰痛・肩こり・スポーツ外傷・交通事故治療・労災に対応。若松駅から車で5分、駐車場11台完備。';
+        $canon = home_url('/');
+    } elseif (is_page('menu')) {
+        $t = '施術メニュー・料金｜癒の原整骨院｜北九州市若松区';
+        $d = '北九州市若松区・癒の原整骨院の施術メニューと料金。手技治療・超音波治療・Dr.メドマーなどの保険施術、特殊電気治療ES-5000・姿勢矯正・酸素カプセルの自費施術を詳しくご紹介します。';
+        $canon = get_permalink();
+    } elseif (is_page('oxygen')) {
+        $t = '酸素カプセル｜癒の原整骨院｜北九州市若松区・地域初導入';
+        $d = '北九州市若松区・癒の原整骨院の酸素カプセル。地域初導入。酸素濃度30%・1.3気圧で疲労回復・睡眠改善・美肌・肩こり腰痛緩和。30分1,000円〜。着替え不要。';
+        $canon = get_permalink();
+    } elseif (is_page('es5000')) {
+        $t = '特殊電気治療 ES-5000｜癒の原整骨院｜北九州市若松区｜神経の痛み・しびれに';
+        $d = '北九州市若松区・癒の原整骨院の特殊電気治療「ES-5000」。立体動態波・微弱電流・神経筋刺激で、神経性の痛みやしびれ、深部のコリ、スポーツ外傷までアプローチ。プロの現場でも使われる治療器です。';
+        $canon = get_permalink();
+    } elseif (is_page('accident')) {
+        $t = '交通事故・むち打ち治療｜癒の原整骨院｜北九州市若松区【自賠責0円】';
+        $d = '北九州市若松区で交通事故治療なら癒の原整骨院。むち打ち・首の痛み・しびれに対応し、自賠責保険適用で窓口負担0円。保険会社対応・他院からの転院もサポート。若松駅から車で5分、夜20時まで受付。';
+        $canon = get_permalink();
+    } elseif (is_page('symptoms')) {
+        $t = '対応症状｜癒の原整骨院｜北九州市若松区｜腰痛・肩こり・スポーツ外傷';
+        $d = '北九州市若松区・癒の原整骨院の対応症状。腰痛・肩こり・ぎっくり腰・寝違え・捻挫・五十肩・坐骨神経痛・スポーツ外傷など。回復に特化したオーダーメイド施術で根本改善を目指します。';
+        $canon = get_permalink();
+    } elseif (is_post_type_archive('column')) {
+        $t = 'コラム｜癒の原整骨院｜北九州市若松区｜交通事故・体のケア情報';
+        $d = '北九州市若松区・癒の原整骨院のコラム。交通事故・むち打ち、酸素カプセル、腰痛・肩こりなど、体のケアに役立つ情報を院長・柔道整復師が解説します。';
+        $canon = get_post_type_archive_link('column');
+    } elseif (is_singular('column')) {
+        $t = get_the_title() . '｜癒の原整骨院｜北九州市若松区';
+        $ex = get_the_excerpt();
+        if (!$ex) {
+            $ex = wp_trim_words(wp_strip_all_tags(get_post_field('post_content', get_the_ID())), 90, '…');
+        }
+        $d = mb_substr($ex, 0, 120);
+        $canon = get_permalink();
+    }
+    return array('title' => $t, 'desc' => $d, 'canon' => $canon);
+}
+
+/* タイトルタグの上書き */
+function ynh_seo_title($title) {
+    $s = ynh_seo_data();
+    return $s['title'] ? $s['title'] : $title;
+}
+add_filter('pre_get_document_title', 'ynh_seo_title', 20);
+
+/* メタ／OGP／canonical 出力 */
+function ynh_seo_head() {
+    $s = ynh_seo_data();
+    $title = $s['title'] ? $s['title'] : wp_get_document_title();
+    $desc  = $s['desc'];
+    $canon = $s['canon'];
+    $ogimg = '';
+    if (is_singular('column') && has_post_thumbnail()) {
+        $ogimg = get_the_post_thumbnail_url(get_the_ID(), 'large');
+    }
+    if (!$ogimg) {
+        $ogimg = get_template_directory_uri() . '/assets/img/storefront.jpg';
+    }
+    echo "\n";
+    if ($desc)  echo '<meta name="description" content="' . esc_attr($desc) . '">' . "\n";
+    if ($canon) echo '<link rel="canonical" href="' . esc_url($canon) . '">' . "\n";
+    echo '<meta property="og:type" content="' . (is_front_page() ? 'website' : 'article') . '">' . "\n";
+    echo '<meta property="og:title" content="' . esc_attr($title) . '">' . "\n";
+    if ($desc) echo '<meta property="og:description" content="' . esc_attr($desc) . '">' . "\n";
+    echo '<meta property="og:url" content="' . esc_url($canon ? $canon : home_url('/')) . '">' . "\n";
+    echo '<meta property="og:site_name" content="' . esc_attr(get_bloginfo('name')) . '">' . "\n";
+    echo '<meta property="og:locale" content="ja_JP">' . "\n";
+    echo '<meta property="og:image" content="' . esc_url($ogimg) . '">' . "\n";
+    echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+}
+add_action('wp_head', 'ynh_seo_head', 1);
+
 /* ---- アーカイブの表示件数 ---- */
 function ynh_column_per_page($query) {
     if (!is_admin() && $query->is_main_query() && is_post_type_archive('column')) {
