@@ -46,7 +46,6 @@
 <div class="mobile-cta">
   <a href="tel:<?php echo esc_attr(YNH_TEL_RAW); ?>" class="m-tel"><span>📞</span>電話</a>
   <a href="<?php echo esc_url(YNH_LINE_URL); ?>" target="_blank" rel="noopener" class="m-line"><span>💬</span>LINE予約</a>
-  <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="m-form"><span>✉</span>相談</a>
 </div>
 
 <?php wp_footer(); ?>
