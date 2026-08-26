@@ -146,9 +146,16 @@ function ynh_seo_data() {
         $canon = get_post_type_archive_link('column');
     } elseif (is_singular('column')) {
         $t = get_the_title() . '｜癒の原整骨院｜北九州市若松区';
-        $ex = get_the_excerpt();
+        // 手動抜粋があれば優先。無ければ本文の最初の段落（見出し・メタ表記を避ける）
+        $ex = get_post_field('post_excerpt', get_the_ID());
         if (!$ex) {
-            $ex = wp_trim_words(wp_strip_all_tags(get_post_field('post_content', get_the_ID())), 90, '…');
+            $content = get_post_field('post_content', get_the_ID());
+            if (preg_match('/<p[^>]*>(.*?)<\/p>/is', $content, $m)) {
+                $ex = trim(wp_strip_all_tags($m[1]));
+            }
+            if (!$ex) {
+                $ex = wp_trim_words(wp_strip_all_tags($content), 90, '…');
+            }
         }
         $d = mb_substr($ex, 0, 120);
         $canon = get_permalink();
