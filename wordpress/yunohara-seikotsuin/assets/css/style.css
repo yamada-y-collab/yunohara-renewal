@@ -443,3 +443,20 @@ a{color:inherit;text-decoration:none}
 .svc .svc-more{margin-left:12px;font-weight:700;color:var(--green);font-size:.86rem;white-space:nowrap}
 .svc-note{background:var(--green-l);border-radius:10px;padding:16px 20px;font-size:.9rem;font-weight:500;margin-top:6px}
 @media(max-width:600px){.svc{flex-direction:column;gap:14px;padding:22px}.svc .svc-ico{width:48px;height:48px;font-size:1.4rem}}
+
+/* ===== Googleクチコミ ===== */
+.review-summary{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;
+  background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:22px 30px;max-width:560px;margin:0 auto 40px}
+.review-score{display:flex;align-items:baseline;gap:6px}
+.review-score b{font-family:"Lato";font-weight:900;font-size:3rem;line-height:1;color:var(--green-d)}
+.review-score small{font-size:.9rem;color:var(--ink-soft);font-weight:700}
+.review-summary .stars{color:#fbbc04;font-size:1.3rem;letter-spacing:2px;line-height:1}
+.review-summary .src{font-size:.82rem;color:var(--ink-soft);font-weight:700}
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:1000px;margin:0 auto}
+.review-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:26px 24px;
+  display:flex;flex-direction:column;border-top:4px solid var(--green)}
+.review-card .stars{color:#fbbc04;font-size:1rem;letter-spacing:2px;margin-bottom:12px}
+.review-card p{font-size:.92rem;line-height:1.9;flex:1}
+.review-card .who{margin-top:16px;font-size:.82rem;color:var(--ink-soft);font-weight:700}
+.review-more{text-align:center;margin-top:34px}
+@media(max-width:900px){.review-grid{grid-template-columns:1fr}}

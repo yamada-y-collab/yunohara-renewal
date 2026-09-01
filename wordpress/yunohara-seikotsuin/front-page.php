@@ -169,6 +169,37 @@ get_header();
   </div>
 </section>
 
+<!-- ===== Googleクチコミ ===== -->
+<section class="section section-soft" id="reviews">
+  <div class="container">
+    <div class="sec-head"><span class="sec-wm">VOICE</span><span class="en">VOICE</span><span class="ja">患者様の声</span></div>
+
+    <div class="review-summary">
+      <div class="review-score"><b><?php echo esc_html(YNH_REVIEW_SCORE); ?></b><small>/ 5.0</small></div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="src">Googleクチコミ <?php echo esc_html(YNH_REVIEW_COUNT); ?>件の評価</div>
+      </div>
+    </div>
+
+    <!-- ▼クチコミの追加・差し替えはこのカードを複製して編集 -->
+    <div class="review-grid">
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>初めてでも親しみやすくて明るい感じでした。続けて行くうちに症状も改善されてきました。これからも続けていきます。</p>
+        <div class="who">NAOMI M 様</div>
+      </article>
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>仕事帰りに施術だけ行ってきました。酸素カプセルやメドマーもあって疲れた身体が癒されます。</p>
+        <div class="who">花月 様</div>
+      </article>
+    </div>
+
+    <p class="review-more"><a href="<?php echo esc_url(YNH_REVIEW_URL); ?>" target="_blank" rel="noopener" class="btn btn-ghost">Googleのクチコミをすべて見る</a></p>
+  </div>
+</section>
+
 <!-- ===== アクセス ===== -->
 <section class="section" id="access">
   <div class="container">

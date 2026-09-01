@@ -12,6 +12,12 @@ define('YNH_LINE_URL', 'https://lin.ee/xnoZxgP');
 define('YNH_IG_URL',   'https://www.instagram.com/yunohara_1112/');
 define('YNH_KARADA_URL','https://yunohara-karada-labo.com/');
 
+/* ---- Googleクチコミ（数値が変わったらここだけ更新） ---- */
+define('YNH_REVIEW_SCORE', '4.9');
+define('YNH_REVIEW_COUNT', '12');
+// GBPの「クチコミを増やす」で取得した共有リンクに差し替え可
+define('YNH_REVIEW_URL', 'https://www.google.com/search?q=' . rawurlencode('癒の原整骨院 北九州市若松区'));
+
 /* ---- テーマサポート ---- */
 function ynh_setup() {
     add_theme_support('title-tag');
