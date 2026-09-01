@@ -187,12 +187,17 @@ get_header();
       <article class="review-card">
         <div class="stars">★★★★★</div>
         <p>初めてでも親しみやすくて明るい感じでした。続けて行くうちに症状も改善されてきました。これからも続けていきます。</p>
-        <div class="who">NAOMI M 様</div>
+        <div class="who">N.M 様</div>
       </article>
       <article class="review-card">
         <div class="stars">★★★★★</div>
-        <p>仕事帰りに施術だけ行ってきました。酸素カプセルやメドマーもあって疲れた身体が癒されます。</p>
-        <div class="who">花月 様</div>
+        <p>仕事帰りに施術だけ行ってきました。酸素カプセルやメドマーもあって疲れた身体が癒されます。ジムが併設されているのも珍しいです。</p>
+        <div class="who">K 様</div>
+      </article>
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>元気な整骨院で立体動態波や酸素もあり施術も上手で腰が悪かった体も良くなってよかったです！また行きます！</p>
+        <div class="who">M 様</div>
       </article>
     </div>
 
