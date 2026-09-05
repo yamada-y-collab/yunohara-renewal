@@ -271,13 +271,23 @@ function ynh_disable_author_archive() {
 }
 add_action('template_redirect', 'ynh_disable_author_archive');
 
-/* サイトマップから 著者 を除外（プロバイダ登録解除で行う。
-   wp_sitemaps_add_provider で false を返すとサイトマップ全体が404になるため使わない） */
-function ynh_sitemap_remove_users($sitemaps) {
-    unset($sitemaps['users']);
-    return $sitemaps;
+/* サイトマップ要求時は必ず200を返す
+   （公開中の「投稿」が0件だとメインクエリが空→404が確定し、
+     XMLは出力されるのにステータスだけ404になるため） */
+function ynh_sitemap_force_200() {
+    if (get_query_var('sitemap') || get_query_var('sitemap-stylesheet')) {
+        global $wp_query;
+        $wp_query->is_404 = false;
+        status_header(200);
+    }
 }
-add_filter('wp_sitemaps_register_providers', 'ynh_sitemap_remove_users');
+add_action('template_redirect', 'ynh_sitemap_force_200', 0);
+
+/* サイトマップから 著者 を除外 */
+function ynh_sitemap_remove_users($provider, $name) {
+    return ('users' === $name) ? false : $provider;
+}
+add_filter('wp_sitemaps_add_provider', 'ynh_sitemap_remove_users', 10, 2);
 
 function ynh_sitemap_taxonomies($taxonomies) {
     unset($taxonomies['category'], $taxonomies['post_tag']);
