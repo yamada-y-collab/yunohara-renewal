@@ -165,6 +165,24 @@ function ynh_seo_data() {
         }
         $d = mb_substr($ex, 0, 120);
         $canon = get_permalink();
+    } elseif (is_tax('column_cat')) {
+        $term = get_queried_object();
+        $t = $term->name . 'のコラム｜癒の原整骨院｜北九州市若松区';
+        $d = '北九州市若松区・癒の原整骨院のコラム「' . $term->name . '」の記事一覧。院長・柔道整復師が体のケアに役立つ情報を解説します。';
+        $canon = get_term_link($term);
+    } elseif (is_page()) {
+        /* 専用テンプレート以外の固定ページ（プライバシーポリシー等）のフォールバック */
+        $t = get_the_title() . '｜癒の原整骨院｜北九州市若松区';
+        $ex = get_post_field('post_excerpt', get_the_ID());
+        if (!$ex) {
+            $content = get_post_field('post_content', get_the_ID());
+            $ex = wp_trim_words(wp_strip_all_tags(strip_shortcodes($content)), 90, '…');
+        }
+        if (!$ex) {
+            $ex = '北九州市若松区の癒の原整骨院（' . get_the_title() . '）のご案内です。';
+        }
+        $d = mb_substr($ex, 0, 120);
+        $canon = get_permalink();
     }
     return array('title' => $t, 'desc' => $d, 'canon' => $canon);
 }
@@ -228,6 +246,42 @@ function ynh_legacy_redirects() {
     }
 }
 add_action('template_redirect', 'ynh_legacy_redirects');
+
+/* =========================================================
+   SEO衛生：薄い自動生成ページを noindex ＋ サイトマップから除外
+   （著者アーカイブ・カテゴリ・日付・タグ・検索結果・添付ファイル）
+   ========================================================= */
+function ynh_is_thin_archive() {
+    return (is_author() || is_date() || is_search() || is_attachment()
+        || is_category() || is_tag() || is_paged() && (is_author() || is_date()));
+}
+function ynh_noindex() {
+    if (ynh_is_thin_archive()) {
+        echo '<meta name="robots" content="noindex,follow">' . "\n";
+    }
+}
+add_action('wp_head', 'ynh_noindex', 1);
+
+/* 著者アーカイブは1人運用のため無効化（トップへ301） */
+function ynh_disable_author_archive() {
+    if (is_author()) {
+        wp_redirect(home_url('/'), 301);
+        exit;
+    }
+}
+add_action('template_redirect', 'ynh_disable_author_archive');
+
+/* サイトマップから 著者・カテゴリ・タグ・投稿(未使用) を除外 */
+function ynh_sitemap_remove_users($provider, $name) {
+    return ('users' === $name) ? false : $provider;
+}
+add_filter('wp_sitemaps_add_provider', 'ynh_sitemap_remove_users', 10, 2);
+
+function ynh_sitemap_taxonomies($taxonomies) {
+    unset($taxonomies['category'], $taxonomies['post_tag']);
+    return $taxonomies;
+}
+add_filter('wp_sitemaps_taxonomies', 'ynh_sitemap_taxonomies');
 
 /* ---- アーカイブの表示件数 ---- */
 function ynh_column_per_page($query) {

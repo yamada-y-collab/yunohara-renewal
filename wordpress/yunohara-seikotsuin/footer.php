@@ -30,6 +30,7 @@
       <li><a href="<?php echo esc_url(home_url('/#faq')); ?>">よくある質問</a></li>
       <li><a href="<?php echo esc_url(YNH_KARADA_URL); ?>" target="_blank" rel="noopener">姉妹院 カラダ研究所 ↗</a></li>
       <li><a href="<?php echo esc_url(home_url('/#contact')); ?>">お問い合わせ</a></li>
+      <li><a href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">プライバシーポリシー</a></li>
     </ul>
   </div>
   <p class="copyright">&copy; <?php bloginfo('name'); ?> All Rights Reserved.</p>
