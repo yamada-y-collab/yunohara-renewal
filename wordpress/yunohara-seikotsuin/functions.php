@@ -271,11 +271,13 @@ function ynh_disable_author_archive() {
 }
 add_action('template_redirect', 'ynh_disable_author_archive');
 
-/* サイトマップから 著者・カテゴリ・タグ・投稿(未使用) を除外 */
-function ynh_sitemap_remove_users($provider, $name) {
-    return ('users' === $name) ? false : $provider;
+/* サイトマップから 著者 を除外（プロバイダ登録解除で行う。
+   wp_sitemaps_add_provider で false を返すとサイトマップ全体が404になるため使わない） */
+function ynh_sitemap_remove_users($sitemaps) {
+    unset($sitemaps['users']);
+    return $sitemaps;
 }
-add_filter('wp_sitemaps_add_provider', 'ynh_sitemap_remove_users', 10, 2);
+add_filter('wp_sitemaps_register_providers', 'ynh_sitemap_remove_users');
 
 function ynh_sitemap_taxonomies($taxonomies) {
     unset($taxonomies['category'], $taxonomies['post_tag']);
