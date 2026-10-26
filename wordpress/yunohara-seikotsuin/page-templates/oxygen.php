@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <?php
 /*
 Template Name: 酸素カプセル
@@ -8,12 +9,12 @@ get_header();
   <span class="en">OXYGEN CAPSULE</span>
   <h1>地域初の酸素カプセル</h1>
 </section>
-<div class="breadcrumb"><div class="container"><a href="<?php echo home_url('/'); ?>">ホーム</a><span>›</span>酸素カプセル</div></div>
+<div class="breadcrumb"><div class="container"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a><span>›</span>酸素カプセル</div></div>
 
 <!-- 導入 -->
 <section class="section">
   <div class="container split">
-    <div class="split-media"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/oxygen.jpg" alt="癒の原整骨院の酸素カプセル"></div>
+    <div class="split-media"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/oxygen.jpg" alt="癒の原整骨院の酸素カプセル"></div>
     <div>
       <div class="sec-head left"><span class="en">CONCEPT</span><span class="ja">全身に酸素を届けて回復を早める</span></div>
       <p class="lead">通常21%の酸素濃度を<span class="hl">30%</span>まで高め、<span class="hl">1.3気圧</span>の環境で全身のすみずみまで効率よく酸素を行き渡らせます。施術との相乗効果で、疲労やケガからの回復をサポートします。</p>

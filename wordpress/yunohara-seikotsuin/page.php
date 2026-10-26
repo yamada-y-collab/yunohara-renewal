@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <?php
 /*
  * 固定ページの既定テンプレート

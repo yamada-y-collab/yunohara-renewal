@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <!-- ===== CTA帯 ===== -->
 <section class="cta-band" id="contact">
   <div class="container">

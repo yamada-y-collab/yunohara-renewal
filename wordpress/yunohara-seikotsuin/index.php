@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <?php get_header(); ?>
 
 <div class="breadcrumb"><div class="container"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a><span>›</span><?php echo esc_html(wp_get_document_title()); ?></div></div>

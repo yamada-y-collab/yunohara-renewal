@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <?php
 /*
 Template Name: 施術メニュー・料金
@@ -8,7 +9,7 @@ get_header();
   <span class="en">MENU & PRICE</span>
   <h1>施術メニュー・料金</h1>
 </section>
-<div class="breadcrumb"><div class="container"><a href="<?php echo home_url('/'); ?>">ホーム</a><span>›</span>施術メニュー・料金</div></div>
+<div class="breadcrumb"><div class="container"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a><span>›</span>施術メニュー・料金</div></div>
 
 <!-- 保険施術 -->
 <section class="section">
@@ -64,7 +65,7 @@ get_header();
         <h3>特殊電気治療 ES-5000<span class="min">1回 7分</span></h3>
         <p>立体動態波・微弱電流・神経筋刺激（EMS）を使い分けられる治療器です。手技では届きにくい体の深部の痛みや、神経性のしびれにまでアプローチ。プロの現場でも使われる機器で、急性のケガから慢性的な不調まで幅広く対応します。</p>
         <span class="price"><span class="yen">初回 1,000円</span>／1回 1,200円</span>
-        <span class="svc-more">※回数券・フリーパスあり　<a href="<?php echo home_url('/es5000/'); ?>" style="color:var(--green)">▶ 詳しく見る</a></span>
+        <span class="svc-more">※回数券・フリーパスあり　<a href="<?php echo esc_url(home_url('/es5000/')); ?>" style="color:var(--green)">▶ 詳しく見る</a></span>
       </div>
     </div>
     <div class="svc">
@@ -88,7 +89,7 @@ get_header();
       <tr><th>30分コース</th><td><span class="yen">初回 1,000円</span>／1回 2,000円／4回回数券 7,000円</td></tr>
       <tr><th>60分コース</th><td>1回 4,000円／4回回数券 14,000円</td></tr>
     </table>
-    <p style="text-align:center;margin-top:24px"><a href="<?php echo home_url('/oxygen/'); ?>" class="btn btn-ghost">酸素カプセルの詳細を見る</a></p>
+    <p style="text-align:center;margin-top:24px"><a href="<?php echo esc_url(home_url('/oxygen/')); ?>" class="btn btn-ghost">酸素カプセルの詳細を見る</a></p>
   </div>
 </section>
 
@@ -97,7 +98,7 @@ get_header();
   <div class="container rich">
     <div class="callout">
       <p class="ttl">料金について</p>
-      <p>※料金はすべて税込です。回数券・フリーパスの内容は院内にてご案内します。<br>※交通事故（自賠責保険）・労災の場合は窓口負担がかからないケースがあります。詳しくは<a href="<?php echo home_url('/accident/'); ?>">交通事故・むち打ち治療のページ</a>をご覧ください。</p>
+      <p>※料金はすべて税込です。回数券・フリーパスの内容は院内にてご案内します。<br>※交通事故（自賠責保険）・労災の場合は窓口負担がかからないケースがあります。詳しくは<a href="<?php echo esc_url(home_url('/accident/')); ?>">交通事故・むち打ち治療のページ</a>をご覧ください。</p>
     </div>
   </div>
 </section>

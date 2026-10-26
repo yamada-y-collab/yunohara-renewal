@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <?php
 /*
 Template Name: 特殊電気治療 ES-5000
@@ -8,12 +9,12 @@ get_header();
   <span class="en">ES-5000</span>
   <h1>特殊電気治療 ES-5000</h1>
 </section>
-<div class="breadcrumb"><div class="container"><a href="<?php echo home_url('/'); ?>">ホーム</a><span>›</span>特殊電気治療 ES-5000</div></div>
+<div class="breadcrumb"><div class="container"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a><span>›</span>特殊電気治療 ES-5000</div></div>
 
 <!-- 導入 -->
 <section class="section">
   <div class="container split">
-    <div class="split-media"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/es5000.jpg" alt="特殊電気治療 ES-5000"></div>
+    <div class="split-media"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/es5000.jpg" alt="特殊電気治療 ES-5000"></div>
     <div>
       <div class="sec-head left"><span class="en">CONCEPT</span><span class="ja">深部の痛み・しびれにアプローチ</span></div>
       <p class="lead">ES-5000は、<span class="hl">立体動態波</span>・<span class="hl">微弱電流</span>・<span class="hl">神経筋刺激</span>など複数の電気刺激を使い分けられる治療器です。手技だけでは届きにくい<strong>体の深部</strong>や、神経性の痛み・しびれにまでアプローチできます。</p>
@@ -47,7 +48,7 @@ get_header();
       <tr><th>神経筋刺激（EMS）</th><td>筋肉に直接働きかけ、機能回復やインナーマッスルのケアに役立ちます。</td></tr>
     </table>
     <p class="menu-price-box"><strong>料金</strong>：1回7分　初回 1,000円／1回 1,200円　※回数券・フリーパスあり（税込）</p>
-    <p class="note">※症状に合わせて、手技治療や酸素カプセルと組み合わせてご提案します。<a href="<?php echo home_url('/menu/'); ?>" style="color:var(--green);font-weight:700">施術メニュー・料金ページ</a>もご覧ください。</p>
+    <p class="note">※症状に合わせて、手技治療や酸素カプセルと組み合わせてご提案します。<a href="<?php echo esc_url(home_url('/menu/')); ?>" style="color:var(--green);font-weight:700">施術メニュー・料金ページ</a>もご覧ください。</p>
   </div>
 </section>
 
@@ -73,7 +74,7 @@ get_header();
         <h3>回復をもっと早めるなら、酸素カプセル併用</h3>
         <p>ES-5000で痛みにアプローチしながら、酸素カプセルで全身に酸素を届けると相乗効果が期待できます。</p>
       </div>
-      <a href="<?php echo home_url('/oxygen/'); ?>" class="btn btn-green">酸素カプセルを見る</a>
+      <a href="<?php echo esc_url(home_url('/oxygen/')); ?>" class="btn btn-green">酸素カプセルを見る</a>
     </div>
   </div>
 </section>
