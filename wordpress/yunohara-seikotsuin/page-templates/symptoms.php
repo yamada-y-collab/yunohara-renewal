@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <?php
 /*
 Template Name: 対応症状
@@ -8,19 +9,19 @@ get_header();
   <span class="en">SYMPTOMS</span>
   <h1>対応症状</h1>
 </section>
-<div class="breadcrumb"><div class="container"><a href="<?php echo home_url('/'); ?>">ホーム</a><span>›</span>対応症状</div></div>
+<div class="breadcrumb"><div class="container"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a><span>›</span>対応症状</div></div>
 
 <section class="section">
   <div class="container">
     <div class="sec-head"><span class="sec-wm">SYMPTOMS</span><span class="en">SYMPTOMS</span><span class="ja">このような症状に対応しています</span></div>
     <p style="text-align:center;max-width:720px;margin:0 auto 44px;color:var(--ink-soft)">急なケガから慢性的な不調まで、幅広く対応します。「治す力（自然治癒力）を最大限に引き出す」オーダーメイド施術で、根本からの改善を目指します。</p>
     <div class="symptom-grid">
-      <article class="symptom-card"><div class="ph" style="background:url('<?php echo get_template_directory_uri(); ?>/assets/img/sym-koshi.jpg') center/cover"></div><div class="bd"><h3>腰痛・ぎっくり腰</h3><p>慢性的な腰痛から急なぎっくり腰まで。原因を見極めて施術します。</p></div></article>
-      <article class="symptom-card"><div class="ph" style="background:url('<?php echo get_template_directory_uri(); ?>/assets/img/sym-kata.jpg') center/cover"></div><div class="bd"><h3>肩こり・寝違え</h3><p>デスクワークによる肩こりや、朝起きたときの寝違えに対応。</p></div></article>
-      <article class="symptom-card"><div class="ph" style="background:url('<?php echo get_template_directory_uri(); ?>/assets/img/sym-zakotsu.jpg') center/cover"></div><div class="bd"><h3>坐骨神経痛・しびれ</h3><p>坐骨神経痛・脊柱管狭窄症など、神経性の痛み・しびれをケア。</p></div></article>
-      <article class="symptom-card"><div class="ph" style="background:url('<?php echo get_template_directory_uri(); ?>/assets/img/sym-gojyukata.jpg') center/cover"></div><div class="bd"><h3>五十肩・関節痛</h3><p>肩が上がらない、関節が痛むといったお悩みに対応します。</p></div></article>
-      <article class="symptom-card"><div class="ph" style="background:url('<?php echo get_template_directory_uri(); ?>/assets/img/sym-nenza.jpg') center/cover"></div><div class="bd"><h3>捻挫・打撲・肉離れ</h3><p>捻挫・打撲・挫傷（肉離れ）など、急性のケガは保険適用も可能。</p></div></article>
-      <article class="symptom-card"><div class="ph" style="background:url('<?php echo get_template_directory_uri(); ?>/assets/img/sym-sports.jpg') center/cover"></div><div class="bd"><h3>スポーツ外傷・障害</h3><p>競技復帰を見据え、最善の治療法で早期回復をサポートします。</p></div></article>
+      <article class="symptom-card"><div class="ph" style="background:url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/sym-koshi.jpg') center/cover"></div><div class="bd"><h3>腰痛・ぎっくり腰</h3><p>慢性的な腰痛から急なぎっくり腰まで。原因を見極めて施術します。</p></div></article>
+      <article class="symptom-card"><div class="ph" style="background:url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/sym-kata.jpg') center/cover"></div><div class="bd"><h3>肩こり・寝違え</h3><p>デスクワークによる肩こりや、朝起きたときの寝違えに対応。</p></div></article>
+      <article class="symptom-card"><div class="ph" style="background:url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/sym-zakotsu.jpg') center/cover"></div><div class="bd"><h3>坐骨神経痛・しびれ</h3><p>坐骨神経痛・脊柱管狭窄症など、神経性の痛み・しびれをケア。</p></div></article>
+      <article class="symptom-card"><div class="ph" style="background:url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/sym-gojyukata.jpg') center/cover"></div><div class="bd"><h3>五十肩・関節痛</h3><p>肩が上がらない、関節が痛むといったお悩みに対応します。</p></div></article>
+      <article class="symptom-card"><div class="ph" style="background:url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/sym-nenza.jpg') center/cover"></div><div class="bd"><h3>捻挫・打撲・肉離れ</h3><p>捻挫・打撲・挫傷（肉離れ）など、急性のケガは保険適用も可能。</p></div></article>
+      <article class="symptom-card"><div class="ph" style="background:url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/sym-sports.jpg') center/cover"></div><div class="bd"><h3>スポーツ外傷・障害</h3><p>競技復帰を見据え、最善の治療法で早期回復をサポートします。</p></div></article>
     </div>
   </div>
 </section>

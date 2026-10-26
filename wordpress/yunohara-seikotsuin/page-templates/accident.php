@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <?php
 /*
 Template Name: 交通事故・むち打ち
@@ -8,12 +9,12 @@ get_header();
   <span class="en">TRAFFIC ACCIDENT</span>
   <h1>交通事故・むち打ち治療</h1>
 </section>
-<div class="breadcrumb"><div class="container"><a href="<?php echo home_url('/'); ?>">ホーム</a><span>›</span>交通事故・むち打ち治療</div></div>
+<div class="breadcrumb"><div class="container"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a><span>›</span>交通事故・むち打ち治療</div></div>
 
 <!-- 導入 -->
 <section class="section">
   <div class="container split rev">
-    <div class="split-media"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/accident.jpg" alt="交通事故・むち打ち治療の様子"></div>
+    <div class="split-media"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/accident.jpg" alt="交通事故・むち打ち治療の様子"></div>
     <div>
       <div class="sec-head left"><span class="en">ABOUT</span><span class="ja">その症状、放置しないでください</span></div>
       <p class="lead">北九州市若松区の癒の原整骨院では、交通事故による<span class="hl">むち打ち・首や腰の痛み・しびれ</span>の治療に対応しています。事故直後は痛みを感じなくても、数日後につらい症状が現れることが少なくありません。</p>
@@ -67,7 +68,7 @@ get_header();
     </div>
 
     <h2>当院の交通事故施術</h2>
-    <p>癒の原整骨院では、お一人おひとりの症状に合わせた<strong>オーダーメイド施術</strong>を行います。手技療法で筋肉の緊張をやわらげ、超音波や特殊電気治療（ES-5000）で深部の炎症・神経性の痛みやしびれにアプローチ。回復を早めるために<a href="<?php echo home_url('/oxygen/'); ?>">酸素カプセル</a>を併用することもできます。</p>
+    <p>癒の原整骨院では、お一人おひとりの症状に合わせた<strong>オーダーメイド施術</strong>を行います。手技療法で筋肉の緊張をやわらげ、超音波や特殊電気治療（ES-5000）で深部の炎症・神経性の痛みやしびれにアプローチ。回復を早めるために<a href="<?php echo esc_url(home_url('/oxygen/')); ?>">酸素カプセル</a>を併用することもできます。</p>
     <p>「治す力（自然治癒力）を最大限に引き出す」という当院の理念のもと、痛みの緩和だけでなく、再発しにくい身体づくりまでサポートします。</p>
 
     <h2>整形外科との併院・転院について</h2>
@@ -119,9 +120,9 @@ get_header();
   <div class="container">
     <div class="sec-head"><span class="en">COLUMN</span><span class="ja">交通事故に関するコラム</span></div>
     <div class="related-grid">
-      <a class="blog-card" href="<?php echo home_url('/column/jiko-taiou/'); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">基礎知識</div><h3>交通事故にあったら最初にすべきこと</h3><p>警察への連絡から通院開始まで、やるべき手順をわかりやすく解説します。</p><span class="more">続きを読む ›</span></div></a>
-      <a class="blog-card" href="<?php echo home_url('/column/muchiuchi/'); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">症状解説</div><h3>むち打ちの症状と治療｜放置のリスク</h3><p>むち打ちの種類や症状、なぜ早期治療が大切なのかを説明します。</p><span class="more">続きを読む ›</span></div></a>
-      <a class="blog-card" href="<?php echo home_url('/column/jibaiseki/'); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">保険のこと</div><h3>整骨院で交通事故治療｜自賠責の仕組み</h3><p>窓口負担0円で通える理由と、転院・併院のポイントを解説します。</p><span class="more">続きを読む ›</span></div></a>
+      <a class="blog-card" href="<?php echo esc_url(home_url('/column/jiko-taiou/')); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">基礎知識</div><h3>交通事故にあったら最初にすべきこと</h3><p>警察への連絡から通院開始まで、やるべき手順をわかりやすく解説します。</p><span class="more">続きを読む ›</span></div></a>
+      <a class="blog-card" href="<?php echo esc_url(home_url('/column/muchiuchi/')); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">症状解説</div><h3>むち打ちの症状と治療｜放置のリスク</h3><p>むち打ちの種類や症状、なぜ早期治療が大切なのかを説明します。</p><span class="more">続きを読む ›</span></div></a>
+      <a class="blog-card" href="<?php echo esc_url(home_url('/column/jibaiseki/')); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">保険のこと</div><h3>整骨院で交通事故治療｜自賠責の仕組み</h3><p>窓口負担0円で通える理由と、転院・併院のポイントを解説します。</p><span class="more">続きを読む ›</span></div></a>
     </div>
   </div>
 </section>

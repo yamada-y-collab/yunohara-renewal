@@ -1,3 +1,4 @@
+<?php if (!defined('ABSPATH')) exit; ?>
 <?php
 get_header();
 ?>
@@ -94,24 +95,24 @@ get_header();
 
     <h3 class="menu-cat">自費施術</h3>
     <table class="price-table">
-      <tr><th>特殊電気治療（ES-5000）<br><small style="font-weight:500">1回7分</small></th><td><span class="yen">初回 1,000円</span>／1回 1,200円　※回数券・フリーパスあり　<a href="<?php echo home_url('/es5000/'); ?>" style="color:var(--green);font-weight:700;white-space:nowrap">▶ 詳しく</a></td></tr>
+      <tr><th>特殊電気治療（ES-5000）<br><small style="font-weight:500">1回7分</small></th><td><span class="yen">初回 1,000円</span>／1回 1,200円　※回数券・フリーパスあり　<a href="<?php echo esc_url(home_url('/es5000/')); ?>" style="color:var(--green);font-weight:700;white-space:nowrap">▶ 詳しく</a></td></tr>
       <tr><th>姿勢矯正</th><td><span class="yen">初回 1,000円</span>／1回 2,000円　※回数券・フリーパスあり</td></tr>
     </table>
 
-    <h3 class="menu-cat">酸素カプセル <a href="<?php echo home_url('/oxygen/'); ?>" style="font-size:.7rem;color:var(--green);font-weight:700;margin-left:10px">▶ 詳しく見る</a></h3>
+    <h3 class="menu-cat">酸素カプセル <a href="<?php echo esc_url(home_url('/oxygen/')); ?>" style="font-size:.7rem;color:var(--green);font-weight:700;margin-left:10px">▶ 詳しく見る</a></h3>
     <table class="price-table">
       <tr><th>30分コース</th><td><span class="yen">初回 1,000円</span>／1回 2,000円／4回回数券 7,000円</td></tr>
       <tr><th>60分コース</th><td>1回 4,000円／4回回数券 14,000円</td></tr>
     </table>
     <p class="note">※料金はすべて税込です。詳しくは院内にてご案内します。</p>
-    <p style="text-align:center;margin-top:26px"><a href="<?php echo home_url('/menu/'); ?>" class="btn btn-green">施術メニュー・料金を詳しく見る</a></p>
+    <p style="text-align:center;margin-top:26px"><a href="<?php echo esc_url(home_url('/menu/')); ?>" class="btn btn-green">施術メニュー・料金を詳しく見る</a></p>
   </div>
 </section>
 
 <!-- ===== 酸素カプセル誘導 ===== -->
 <section class="section section-soft">
   <div class="container split">
-    <div class="split-media"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/oxygen.jpg" alt="癒の原整骨院の酸素カプセル"></div>
+    <div class="split-media"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/oxygen.jpg" alt="癒の原整骨院の酸素カプセル"></div>
     <div>
       <div class="sec-head left">
         <span class="en">OXYGEN CAPSULE</span>
@@ -119,7 +120,7 @@ get_header();
       </div>
       <p class="lead">酸素濃度を<span class="hl">30%</span>・<span class="hl">1.3気圧</span>まで高め、全身にすみずみまで酸素を届けます。疲労回復・睡眠改善・美肌など多彩な効果が期待できます。</p>
       <ul class="chip-list"><li>疲労回復</li><li>睡眠改善</li><li>肩こり・腰痛緩和</li><li>美肌</li><li>集中力UP</li></ul>
-      <a href="<?php echo home_url('/oxygen/'); ?>" class="btn btn-green">酸素カプセルの詳細を見る</a>
+      <a href="<?php echo esc_url(home_url('/oxygen/')); ?>" class="btn btn-green">酸素カプセルの詳細を見る</a>
     </div>
   </div>
 </section>
@@ -127,7 +128,7 @@ get_header();
 <!-- ===== 特殊電気治療 ES-5000 誘導 ===== -->
 <section class="section">
   <div class="container split rev">
-    <div class="split-media"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/es5000.jpg" alt="特殊電気治療 ES-5000"></div>
+    <div class="split-media"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/es5000.jpg" alt="特殊電気治療 ES-5000"></div>
     <div>
       <div class="sec-head left">
         <span class="en">ES-5000</span>
@@ -135,7 +136,7 @@ get_header();
       </div>
       <p class="lead"><span class="hl">立体動態波</span>・<span class="hl">微弱電流</span>・神経筋刺激で、手技では届きにくい<strong>深部の痛み</strong>や<strong>神経性のしびれ</strong>にまでアプローチ。プロの現場でも使われる治療器です。</p>
       <ul class="chip-list"><li>神経の痛み</li><li>しびれ</li><li>深部のコリ</li><li>急性のケガ</li><li>スポーツ外傷</li></ul>
-      <a href="<?php echo home_url('/es5000/'); ?>" class="btn btn-green">ES-5000の詳細を見る</a>
+      <a href="<?php echo esc_url(home_url('/es5000/')); ?>" class="btn btn-green">ES-5000の詳細を見る</a>
     </div>
   </div>
 </section>
@@ -143,7 +144,7 @@ get_header();
 <!-- ===== 交通事故誘導 ===== -->
 <section class="section section-soft">
   <div class="container split rev">
-    <div class="split-media"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/accident.jpg" alt="交通事故・むち打ち治療の様子"></div>
+    <div class="split-media"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/accident.jpg" alt="交通事故・むち打ち治療の様子"></div>
     <div>
       <div class="sec-head left">
         <span class="en">ACCIDENT</span>
@@ -151,7 +152,7 @@ get_header();
       </div>
       <p class="lead">事故直後は症状がなくても、後から首の痛み・しびれが現れることも。<span class="hl">自賠責保険適用なら窓口負担0円</span>。早めのご相談を。</p>
       <ul class="chip-list"><li>むち打ち</li><li>首・腰の痛み</li><li>しびれ</li><li>自賠責対応</li><li>保険会社対応サポート</li></ul>
-      <a href="<?php echo home_url('/accident/'); ?>" class="btn btn-green">交通事故治療の詳細を見る</a>
+      <a href="<?php echo esc_url(home_url('/accident/')); ?>" class="btn btn-green">交通事故治療の詳細を見る</a>
     </div>
   </div>
 </section>
@@ -159,7 +160,7 @@ get_header();
 <!-- ===== 院長紹介 ===== -->
 <section class="section section-soft" id="doctor">
   <div class="container split">
-    <div class="split-media" style="aspect-ratio:3/4;max-width:360px"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/inchou.jpg" alt="癒の原整骨院 院長 原口匡平"></div>
+    <div class="split-media" style="aspect-ratio:3/4;max-width:360px"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/inchou.jpg" alt="癒の原整骨院 院長 原口匡平"></div>
     <div>
       <div class="sec-head left"><span class="en">DOCTOR</span><span class="ja">院長紹介</span></div>
       <p class="lead" style="font-size:1.3rem;font-weight:900;color:var(--green-d);margin-bottom:14px">院長　原口 匡平 <span style="font-size:.7rem;color:var(--ink-soft);font-weight:500">Kyohei Haraguchi</span></p>
@@ -211,7 +212,7 @@ get_header();
     <div class="sec-head"><span class="sec-wm">ACCESS</span><span class="en">ACCESS</span><span class="ja">アクセス・診療時間</span></div>
     <div class="access-grid">
       <div>
-        <div class="access-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/storefront.jpg" alt="癒の原整骨院 外観（北九州市若松区北湊町・ラ・ムー若松店 目の前）"></div>
+        <div class="access-photo"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/storefront.jpg" alt="癒の原整骨院 外観（北九州市若松区北湊町・ラ・ムー若松店 目の前）"></div>
         <table class="info-table">
           <tr><th>院名</th><td>癒の原整骨院</td></tr>
           <tr><th>住所</th><td>〒808-0027<br>福岡県北九州市若松区北湊町5-62<br>愛暮利伊フォーチュン北湊Ⅱ 2号室</td></tr>
@@ -254,7 +255,7 @@ get_header();
   <div class="container">
     <div class="sec-head"><span class="sec-wm">GROUP</span><span class="en">GROUP</span><span class="ja">姉妹院のご案内</span></div>
     <div class="group-card">
-      <div class="group-media" style="background:linear-gradient(rgba(1,60,40,.4),rgba(1,92,61,.4)),url('<?php echo get_template_directory_uri(); ?>/assets/img/karada-gym.jpg') center/cover">
+      <div class="group-media" style="background:linear-gradient(rgba(1,60,40,.4),rgba(1,92,61,.4)),url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/karada-gym.jpg') center/cover">
         <span class="badge-en">SISTER FACILITY</span>
       </div>
       <div class="group-body">
@@ -274,11 +275,11 @@ get_header();
   <div class="container">
     <div class="sec-head"><span class="sec-wm">COLUMN</span><span class="en">COLUMN</span><span class="ja">お役立ちコラム</span></div>
     <div class="blog-grid">
-      <a class="blog-card" href="<?php echo home_url('/column/jiko-taiou/'); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">交通事故の基礎知識</div><h3>交通事故にあったら最初にすべきこと</h3><p>警察への連絡から通院開始まで、やるべき手順を解説します。</p><span class="more">続きを読む ›</span></div></a>
-      <a class="blog-card" href="<?php echo home_url('/column/muchiuchi/'); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">症状解説</div><h3>むち打ちの症状と治療｜放置のリスク</h3><p>むち打ちの症状と、早期治療が大切な理由を説明します。</p><span class="more">続きを読む ›</span></div></a>
-      <a class="blog-card" href="<?php echo home_url('/column/jibaiseki/'); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">保険のこと</div><h3>整骨院で交通事故治療｜自賠責の仕組み</h3><p>窓口負担0円で通える理由と転院・併院のポイント。</p><span class="more">続きを読む ›</span></div></a>
+      <a class="blog-card" href="<?php echo esc_url(home_url('/column/jiko-taiou/')); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">交通事故の基礎知識</div><h3>交通事故にあったら最初にすべきこと</h3><p>警察への連絡から通院開始まで、やるべき手順を解説します。</p><span class="more">続きを読む ›</span></div></a>
+      <a class="blog-card" href="<?php echo esc_url(home_url('/column/muchiuchi/')); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">症状解説</div><h3>むち打ちの症状と治療｜放置のリスク</h3><p>むち打ちの症状と、早期治療が大切な理由を説明します。</p><span class="more">続きを読む ›</span></div></a>
+      <a class="blog-card" href="<?php echo esc_url(home_url('/column/jibaiseki/')); ?>"><div class="ph"><span class="tag">交通事故</span>記事</div><div class="bd"><div class="date">保険のこと</div><h3>整骨院で交通事故治療｜自賠責の仕組み</h3><p>窓口負担0円で通える理由と転院・併院のポイント。</p><span class="more">続きを読む ›</span></div></a>
     </div>
-    <p style="text-align:center;margin-top:30px"><a href="<?php echo home_url('/column/'); ?>" class="btn btn-ghost">コラム一覧を見る</a></p>
+    <p style="text-align:center;margin-top:30px"><a href="<?php echo esc_url(home_url('/column/')); ?>" class="btn btn-ghost">コラム一覧を見る</a></p>
   </div>
 </section>
 
@@ -287,7 +288,7 @@ get_header();
   <div class="container rich">
     <h2>北九州市若松区で整骨院をお探しの方へ</h2>
     <p>癒の原整骨院は、<strong>北九州市若松区北湊町</strong>（若松駅から車で5分・ラ・ムー若松店 目の前）にある整骨院です。腰痛・肩こり・ぎっくり腰・寝違え・坐骨神経痛・五十肩・スポーツ外傷など、急なケガから慢性的な不調まで幅広く対応しています。</p>
-    <p>地域で初めて導入した<a href="<?php echo home_url('/oxygen/'); ?>">酸素カプセル</a>と最新の治療器を備え、「治す力（自然治癒力）を最大限に引き出す」オーダーメイド施術で、一日も早い回復をサポート。<a href="<?php echo home_url('/accident/'); ?>">交通事故・むち打ち治療</a>や労災にも対応し、各種保険・自賠責保険が利用できます。平日は夜20時まで受付、駐車場11台完備で、お仕事帰りやお車での通院にも便利です。若松区周辺で痛みやお体の不調にお悩みの方は、お気軽にご相談ください。</p>
+    <p>地域で初めて導入した<a href="<?php echo esc_url(home_url('/oxygen/')); ?>">酸素カプセル</a>と最新の治療器を備え、「治す力（自然治癒力）を最大限に引き出す」オーダーメイド施術で、一日も早い回復をサポート。<a href="<?php echo esc_url(home_url('/accident/')); ?>">交通事故・むち打ち治療</a>や労災にも対応し、各種保険・自賠責保険が利用できます。平日は夜20時まで受付、駐車場11台完備で、お仕事帰りやお車での通院にも便利です。若松区周辺で痛みやお体の不調にお悩みの方は、お気軽にご相談ください。</p>
   </div>
 </section>
 <?php get_footer(); ?>
